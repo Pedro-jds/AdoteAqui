@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    background-color: black;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fad000;
+}
+
+.logo {
+    margin: 0 10px 0 30px;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+li {
+    margin: 0 30px 0 0;
+    font-weight: bold;
+    height: 100%;
+}
+
+
+
+main {
+    height: 100vh;
+    background-image: url(imagens-pet/dog-1194087_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-container {
+    background-color: black;
+}
+
+h1{
+    color: #fad000;
+}
+
+h2 {
+    color: #fad000;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+p {
+    color: #fad000;
+}
+
+button {
+    background-color: #fad000;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+section {
+    padding: 30px;
+    width: 40vw;
+}
+
+
+.pets-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.pets-img>img {
+    width: 20vw;
+    height: 45vh;
+    margin: 10px 10px 10px 0;
+    border-radius: 10px;
+
+}
+
+.pets-img>img:hover {
+    transform: scale(1.1);
+
+}
+
+@media (max-width: 700px) {
+    .pets-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pets-img>img {
+        width: 70vw;
+    }
+
+
+    .logo {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
