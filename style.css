@@ -9,6 +9,7 @@ body {
 header{
     width: 100vw;
     position: fixed;
+    z-index: 1;
     background-color: black;
 }
 
